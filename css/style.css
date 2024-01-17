@@ -1,0 +1,382 @@
+
+/* style général */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	width: 100%;
+}
+
+main {
+	width: 100%;
+}
+
+.wrapper{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+h1,
+h2 {
+	text-transform: uppercase;
+}
+
+/* style header */
+
+#top-of-website {
+	background-image: url(../images/photo_bruxelles.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 1080px;
+	margin: auto;
+	position: relative;
+}
+
+
+#logo {
+	margin-left: 40px;
+	margin-top: 40px;
+}
+
+.logo-nav{
+	justify-content: space-between;
+	color: white;
+	position: fixed;
+	width: 100%;
+}
+
+nav ul {
+	margin-top: 40px;
+	margin-right: 40px;
+}
+
+nav ul li {
+	display: inline-block;
+	text-transform: uppercase;
+	font-weight: 300;
+	margin-top: 30px;
+	padding-right: 10px;
+	padding-left: 10px;
+	border-right: 1px solid white;
+}
+
+nav a {
+	text-decoration: none;
+	color: white;
+}
+
+nav ul li:last-child {
+	border: none;
+}
+
+h1 {
+	position: absolute;
+	top: 35%;
+	width: 100%;
+	color: rgba(255, 255, 255, 0);
+	font-size: 10em;
+	font-weight: lighter;
+}
+
+.float-left {
+	float: left;
+	font-weight: 300;
+	-webkit-text-stroke: 1px white;
+}
+
+.float-right {
+	float: right;
+	font-weight: 300;
+	-webkit-text-stroke: 1px white;
+}
+
+#cv {
+	position: absolute;
+	color: #172027;
+	font-weight: 300;
+	font-size: 16px;
+	left: calc(50% - 75px);
+	top: 50%;
+	z-index: 10;
+}
+
+.pictos-header {
+	position: absolute;
+	bottom: 40px;
+	right: 40px;
+}
+
+.pictos-header img {
+	margin: 10px;
+}
+
+/* style section présentation */
+
+#intro {
+	background : linear-gradient(113deg, #172027, #001A2E);
+	color: white;
+	padding-bottom: 2em;
+}
+
+#intro h2 {
+	text-align: center;
+	padding-top: 9em;
+	padding-bottom: 4em;
+	font-weight: 300;
+}
+
+#intro p {
+	width : 70%;
+	text-align: center;
+	margin: auto;
+	line-height: 1.2em;
+	font-size: 2em;
+	font-weight: 300;
+}
+
+/* Barres de progression */
+
+.skills {
+	width: 50%;
+	height: auto;
+	margin: 5em auto;
+}
+
+.skills strong {
+	display: inline-block;
+	width: 15%;
+}
+
+.skills em {
+	display: inline-block;
+	width: 10%;
+	padding-left: 50px;
+}
+
+.skill-barre {
+	width: 100%;
+	height: 20px;
+	display: flex;
+	justify-content: space-between;
+	text-transform: uppercase;
+	font-weight: 300;
+	margin-bottom: 20px;
+}
+
+.empty-barre {
+	width: 75%;
+	background-color: rgba(255, 255, 255, 0.10);
+	height: 14px;
+	z-index: 1;
+}
+
+
+.progress-barre {
+	background-image: url(../images/fond\ barre\ de\ progression.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 2;
+	height: 14px;
+}
+
+.fr {
+	width: 100%;
+}
+
+.en {
+	width: 70%;
+}
+
+.sp {
+	width: 30%;
+}
+
+
+/* style section compétence */
+
+#competences {
+	background: transparent url(../images/fond\ barre\ de\ progression.png) 0% 0% no-repeat padding-box;
+	mix-blend-mode: overlay;
+	opacity: 1;
+	filter: brightness(1.80) contrast(1);
+}
+
+#competences h2 {
+	text-align: center;
+	padding-top: 7em;
+	padding-bottom: 2em;
+	font-weight: bold;
+	color: #172027;
+}
+
+.competence {
+	width: 100%;
+	justify-content: center;
+}
+
+#competences article {
+	width : 280px;
+	background-color: rgba(255, 255, 255, 0.281);
+	margin: 50px;
+	padding: 30px;
+	border-radius: 15%;
+}
+
+#competences article h3 {
+	font-weight: 900;
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+/* Style section cursus  */
+
+#cursus-experience {
+	width: 100%;
+	display: flex;
+	padding: 50px 0 70px 0;
+}
+
+.cursus-left {
+	width : 30%;
+	display: flex;
+	justify-content: center;
+}
+
+#year-selector span {
+	margin: 0 20px 0 20px;
+	font-weight: bold;
+	position: relative;
+	top: 2px;
+}
+
+.cursus-right {
+	width : 70%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.cursus-right article {
+	width : 35%;
+	position: relative;
+}
+
+.cursus-right article img {
+	position: absolute;
+	top: -1em;
+	right: 0;
+}
+
+.cursus-right article h4 {
+	font-weight: bold;
+	font-size: 1.5em;
+	margin-top: 50px;
+}
+
+.cursus-right article p {
+	margin-top: 30px;
+	font-weight: 300;
+}
+
+/* Style section contact */
+
+#contact {
+	position: relative;
+}
+
+.contact-top {
+	height: 400px;
+	background: url("../images/jakob-owens-FmlZfeIuntM-unsplash.png");
+}
+
+.contact-top img {
+	margin: auto;
+}
+
+.contact-bottom {
+	height: 350px;
+	position: relative;
+}
+
+.contact-bottom p {
+	position: absolute;
+	font-size: 2em;
+	margin: 90px 30px;
+	word-spacing: 0.5em;
+	font-weight: 400;
+	z-index: 20;
+	right: 30px;
+}
+
+.contact-bottom a {
+	color: black;
+}
+
+#bonhomme,
+#black-line,
+#white-line
+{
+	position: absolute;
+}
+
+#bonhomme {
+	top: 0;
+	left: calc(50% - 333px / 2);
+	z-index: 4;
+}
+
+#black-line {
+	top: 60px;
+	z-index: 2;
+}
+
+#white-line {
+	bottom: 170px;
+	z-index: 3;
+}
+
+#contact_me {
+	position: absolute;
+	font-size: 200px;
+	font-weight: 300;
+	color: white;
+	-webkit-text-stroke: 1px #E4E4E4;
+	text-transform: uppercase;
+	z-index: 1;
+	top: 15%;
+	letter-spacing: 0.1em;
+}
+
+/* Style footer */
+
+footer{
+	height: 230px;
+	background : linear-gradient(113deg, #172027, #001A2E);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+footer a {
+	text-decoration: none;
+	color: white;
+}
+
+#lien_portfolio {
+	border: 1px solid white;
+	border-radius: 5px;
+	padding: 15px 10px;
+}
+
+footer img {
+	margin: 10px;
+}
+
+#chat {
+	position: relative;
+	top : 15px;
+}
